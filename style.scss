@@ -1,0 +1,941 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  max-width: 2000px;
+}
+body {
+  overflow-x: hidden;
+  .navbar {
+    position: fixed;
+    width: 100%;
+    background-color: #222423;
+    display: flex;
+    flex-wrap: wrap;
+    height: 100px;
+    font-family: "Poppins", sans-serif;
+    text-shadow: 2px;
+    z-index: 100;
+    .TrackMate {
+      color: white;
+      text-decoration: none;
+      font-size: 25px;
+      margin-left: 80px;
+    }
+    .navigation {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      margin-right: 80px;
+      gap: 15px;
+      .FAQ {
+        color: white;
+        text-decoration: none;
+        margin-right: 20px;
+      }
+      .FAQ:hover {
+        color: #a238ff;
+        text-decoration: none;
+        margin-right: 20px;
+      }
+      .navbar-toggler {
+        color: white;
+        border: none;
+        font-size: 25px;
+        margin-top: 2px;
+      }
+      a {
+        display: flex;
+        color: white;
+        text-decoration: none;
+        align-items: center;
+        gap: 10px;
+        i {
+          font-size: 30px;
+        }
+        p {
+          margin-top: 15px;
+        }
+      }
+      a:hover {
+        display: flex;
+        color: white;
+        text-decoration: none;
+        align-items: center;
+        gap: 10px;
+        i {
+          font-size: 30px;
+        }
+        p {
+          margin-top: 15px;
+          color: grey;
+        }
+      }
+      .buyNow {
+        display: flex;
+        justify-content: center;
+        background-color: #a238ff;
+        color: white;
+        border: none;
+        border-radius: 50px;
+        width: 130px;
+        height: 40px;
+        box-shadow: blueviolet 0px 1px 10px 1px;
+      }
+      .buyNow:hover {
+        display: flex;
+        justify-content: center;
+        background-color: white;
+        color: black;
+        border: none;
+        border-radius: 50px;
+        width: 130px;
+        height: 40px;
+        box-shadow: blueviolet 0px 1px 10px 1px;
+      }
+    }
+    .offcanvas-body {
+      background-color: black;
+      .cart-head {
+        display: flex;
+        flex-wrap: wrap;
+        height: 70px;
+        gap: 5px;
+        background-color: white;
+        align-items: center;
+        margin: -15px;
+        h1 {
+          font-size: 25px;
+          margin-left: 20px;
+        }
+        p {
+          margin-top: 12px;
+          font-size: 14px;
+        }
+      }
+      .cart-body {
+        display: flex;
+        justify-content: center;
+        margin-top: 150px;
+        color: white;
+        font-size: 19px;
+      }
+    }
+  }
+  footer {
+    background-color: #08030c;
+    background-image: linear-gradient(
+      180deg,
+      #222423 42%,
+      #26202e 30%,
+      #2d1a3f 39%,
+      #34154f 60%
+    );
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    .footer-top {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      border-bottom: white solid 1px;
+      max-width: 1200px;
+      gap: 55px;
+      margin-top: 20px;
+      .socialMedia {
+        display: flex;
+        flex-wrap: wrap;
+        text-decoration: none;
+        list-style: none;
+        gap: 50px;
+        a {
+          text-decoration: none;
+          color: white;
+          font-size: 14px;
+        }
+      }
+      .terms {
+        display: flex;
+        flex-wrap: wrap;
+        text-decoration: none;
+        list-style: none;
+        gap: 50px;
+        margin-right: 25px;
+        a {
+          text-decoration: none;
+          color: white;
+          font-size: 14px;
+        }
+      }
+    }
+    .footer-bottom {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 95px;
+      p {
+        color: white;
+        font-size: 14px;
+        margin: 25px 0px 0px 20px;
+        a {
+          color: white;
+        }
+      }
+    }
+  }
+  .buyNowSection {
+    background-color: #222423;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: auto;
+    .card1 {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      color: white;
+      margin: 200px 50px 0px 0px;
+      img {
+        max-width: 400px;
+      }
+      p {
+        max-width: 450px;
+      }
+    }
+    .card2 {
+      margin: 150px;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      color: white;
+      h2 {
+        font-size: 14px;
+        font-weight: normal;
+      }
+      p {
+        font-size: 20px;
+        margin: 20px 0px 30px;
+        max-width: 400px;
+      }
+      .color {
+        display: flex;
+        gap: 10px;
+        margin: 5px 0px 30px 0px;
+        .color1 {
+          width: 20px;
+          height: 20px;
+          border-radius: 50px;
+          border-color: white;
+          background-color: white;
+          border-width: 1.5px;
+        }
+        .color1:hover {
+          width: 20px;
+          height: 20px;
+          border-radius: 50px;
+          border-color: black;
+          background-color: white;
+          border-width: 2px;
+        }
+        .color2 {
+          width: 20px;
+          height: 20px;
+          border-radius: 50px;
+          border-color: white;
+          background-color: black;
+          border-width: 1.5px;
+        }
+        .color2:hover {
+          width: 20px;
+          height: 20px;
+          border-radius: 50px;
+          border-color: black;
+          background-color: black;
+          border-width: 2px;
+        }
+        .color3 {
+          width: 20px;
+          height: 20px;
+          border-radius: 50px;
+          border-color: white;
+          background-color: blue;
+          border-width: 1.5px;
+        }
+        .color3:hover {
+          width: 20px;
+          height: 20px;
+          border-radius: 50px;
+          border-color: black;
+          background-color: blue;
+          border-width: 2px;
+        }
+        .color4 {
+          width: 20px;
+          height: 20px;
+          border-radius: 50px;
+          border-color: white;
+          background-color: #a238ff;
+          border-width: 1.5px;
+        }
+        .color4:hover {
+          width: 20px;
+          height: 20px;
+          border-radius: 50px;
+          border-color: black;
+          background-color: #a238ff;
+          border-width: 2px;
+        }
+        .color5 {
+          width: 20px;
+          height: 20px;
+          border-radius: 50px;
+          border-color: white;
+          background-color: #1eb0a0;
+          border-width: 1.5px;
+        }
+        .color5:hover {
+          width: 20px;
+          height: 20px;
+          border-radius: 50px;
+          border-color: black;
+          background-color: #1eb0a0;
+          border-width: 2px;
+        }
+      }
+      input {
+        margin: 5px 0px 40px 0px;
+        width: 75px;
+        height: 35px;
+      }
+      button {
+        width: 300px;
+        height: 40px;
+        border-radius: 50px;
+        background-color: #a238ff;
+        border: none;
+        color: white;
+      }
+      button:hover {
+        width: 300px;
+        height: 40px;
+        border-radius: 50px;
+        background-color: #a238ff;
+        border: none;
+        color: white;
+        box-shadow: inset 0px 0px 40px 20px rgba(0, 0, 0, 0.6);
+      }
+      .ul1 {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        list-style: none;
+        justify-content: center;
+        margin: 20px 0px 10px -20px;
+        li {
+          border-bottom: solid 1px white;
+          margin-top: 20px;
+          a {
+            margin-top: 15px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            color: white;
+            text-decoration: none;
+            p {
+              margin-top: -17px;
+              font-size: 35px;
+            }
+          }
+          p {
+            font-size: 16px;
+            margin-top: -15px;
+          }
+        }
+      }
+      .ul2 {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 21px;
+        margin: 20px 0px 0px -16px;
+        li {
+          list-style: none;
+          .icon1 {
+            background-color: #60d66a;
+            color: white;
+            border-radius: 50px;
+          }
+          .icon2 {
+            color: #3a5897;
+          }
+          .icon3 {
+            color: #30c7f2;
+          }
+          .icon4 {
+            color: #f01951;
+          }
+        }
+      }
+    }
+  }
+  .section1 {
+    background-color: #08030c;
+    background-image: linear-gradient(
+      180deg,
+      #08030c 0%,
+      #0e1940 19%,
+      #252975 39%,
+      #391e6d 60%,
+      #34184d 80%,
+      #222423 100%
+    );
+
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    height: 850px;
+    div {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin: 240px 0px 70px 0px;
+      color: white;
+      p {
+        font-size: 25px;
+      }
+      h1 {
+        font-size: 70px;
+      }
+      .buyNow {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        background-color: #a238ff;
+        color: white;
+        border: none;
+        border-radius: 50px;
+        width: 170px;
+        height: 50px;
+        box-shadow: blueviolet 0px 1px 10px 1px;
+        font-size: 18px;
+      }
+      .buyNow:hover {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        background-color: white;
+        color: black;
+        border: none;
+        border-radius: 50px;
+        width: 170px;
+        height: 50px;
+        box-shadow: blueviolet 0px 1px 10px 1px;
+        font-size: 18px;
+      }
+    }
+    img {
+      margin: 150px 0px 120px 0px;
+      max-width: 500px;
+    }
+  }
+  .FAQ-section {
+    background-color: #222423;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    .FAQ-section1 {
+      margin-top: 200px;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      gap: 20px;
+      color: white;
+      border-bottom: 1px solid blueviolet;
+      h1 {
+        font-size: 55px;
+      }
+      h2 {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        i {
+          font-size: 20px;
+          margin-top: 14px;
+        }
+      }
+      h3 {
+        font-size: 22px;
+        font-weight: normal;
+        margin-top: 20px;
+      }
+      p {
+        max-width: 900px;
+      }
+      .FAQ-icons {
+        display: flex;
+        gap: 16px;
+        a {
+          color: white;
+          margin-bottom: 25px;
+        }
+        a:hover {
+          color: grey;
+          margin-bottom: 25px;
+        }
+      }
+    }
+    .FAQ-section2 {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      gap: 20px;
+      color: white;
+      border-bottom: 1px solid blueviolet;
+      h3 {
+        font-size: 22px;
+        font-weight: normal;
+        margin-top: 20px;
+      }
+      p {
+        max-width: 900px;
+      }
+      .FAQ-icons {
+        display: flex;
+        gap: 16px;
+        a {
+          color: white;
+          margin-bottom: 25px;
+        }
+        a:hover {
+          color: grey;
+          margin-bottom: 25px;
+        }
+      }
+    }
+    .FAQ-section3 {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      gap: 20px;
+      color: white;
+      border-bottom: 1px solid blueviolet;
+      margin-bottom: 80px;
+      h3 {
+        font-size: 22px;
+        font-weight: normal;
+        margin-top: 20px;
+      }
+      p {
+        max-width: 900px;
+      }
+      .hiddenp {
+        color: #222423;
+        max-width: 900px;
+      }
+      .FAQ-icons {
+        display: flex;
+        gap: 16px;
+        margin-top: -70px;
+        a {
+          color: white;
+          margin-bottom: 25px;
+        }
+        a:hover {
+          color: grey;
+          margin-bottom: 25px;
+        }
+      }
+    }
+  }
+  .subscribe {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: #222423;
+    color: white;
+    .img1 {
+      margin-top: 50px;
+      width: 120px;
+      height: 100px;
+    }
+    p {
+      letter-spacing: 3px;
+      margin-top: 10px;
+    }
+    h1 {
+      font-size: 55px;
+      margin: 30px 0px;
+    }
+    .buyNow {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #a238ff;
+      color: white;
+      border: none;
+      border-radius: 50px;
+      width: 200px;
+      height: 50px;
+      box-shadow: blueviolet 0px 1px 10px 1px;
+      text-decoration: none;
+    }
+    .buyNow:hover {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: white;
+      color: black;
+      border: none;
+      border-radius: 50px;
+      width: 200px;
+      height: 50px;
+      box-shadow: blueviolet 0px 1px 10px 1px;
+      text-decoration: none;
+    }
+    .img2 {
+      margin: 80px 0px 80px 0px;
+    }
+    h2 {
+      font-size: 55px;
+    }
+    .email {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-bottom: 70px;
+      h3 {
+        font-size: 18px;
+        margin-top: 70px;
+        display: flex;
+        align-self: first baseline;
+        margin-left: 310px;
+        font-weight: normal;
+      }
+      .input1 {
+        display: flex;
+        flex-wrap: wrap;
+        align-self: center;
+        width: 100%;
+        max-width: 900px;
+        height: 43px;
+        border-radius: 50px;
+        border-color: white;
+        background-color: transparent;
+        color: white;
+      }
+      .input1:hover {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        max-width: 900px;
+        height: 43px;
+        border-radius: 50px;
+        border-color: #a238ff;
+        background-color: black;
+        color: white;
+      }
+      .input1:focus {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        max-width: 900px;
+        height: 43px;
+        border-radius: 50px;
+        border-color: #a238ff;
+        background-color: black;
+        color: white;
+        border-width: 4px;
+      }
+      .inputEmail {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        gap: 35px;
+        margin-top: 10px;
+        .input2 {
+          border-color: white;
+          background-color: transparent;
+          width: 20px;
+          border-width: 0.02px;
+        }
+        h4 {
+          font-size: 17px;
+          margin: 7px 0px 0px 9px;
+        }
+        button {
+          width: 200px;
+          height: 45px;
+          border-radius: 50px;
+          background-color: #a238ff;
+          border-color: transparent;
+          color: white;
+          font-size: 17px;
+        }
+        button:hover {
+          width: 200px;
+          height: 45px;
+          border-radius: 50px;
+          background-color: transparent;
+          border-color: white;
+          color: white;
+          font-size: 17px;
+        }
+      }
+    }
+  }
+  .termsConditions {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: #222423;
+    div {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      gap: 50px;
+      margin: 200px 0px 150px 200px;
+      color: white;
+      h1 {
+        font-size: 50px;
+      }
+      p {
+        max-width: 1020px;
+        font-size: 18px;
+      }
+      h2 {
+        margin: 70px 0px 40px;
+      }
+      li {
+        max-width: 700px;
+        font-size: 18px;
+        list-style: number;
+      }
+    }
+  }
+  .section2 {
+    border-top: #222423 solid 20px;
+    border-bottom: #222423 solid 20px;
+    background-color: #2d2e2e;
+    display: flex;
+    flex-wrap: wrap;
+    height: 700px;
+    justify-content: space-evenly;
+    .div1 {
+      max-width: 440px;
+      height: 671px;
+      background-color: #08030c;
+      background-image: linear-gradient(
+        180deg,
+        #08030c 0%,
+        #0e1940 19%,
+        #252975 39%,
+        #391e6d 60%,
+        #34184d 80%,
+        #222423 100%
+      );
+      border-right: #222423 solid 37px;
+      margin-left: -290px;
+      .watch {
+        max-width: 450px;
+        margin: 70px 0px 0px 130px;
+      }
+    }
+    .parent {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      justify-content: center;
+      gap: 50px;
+      color: white;
+      height: 700px;
+      .child {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        img {
+          width: 80px;
+          margin-top: -30px;
+        }
+        .p1 {
+          letter-spacing: 3px;
+        }
+      }
+      h1 {
+        max-width: 500px;
+        font-size: 50px;
+      }
+      .p2 {
+        font-size: 17px;
+        max-width: 470px;
+      }
+    }
+  }
+  .section3 {
+    background-image: url("./images/12.png");
+    height: 800px;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+    div {
+      display: flex;
+      margin-left: 200px;
+      img {
+        max-width: 70px;
+      }
+      .p1 {
+        letter-spacing: 3px;
+        margin: 18px 0px 0px 21px;
+      }
+    }
+    h1 {
+      font-size: 50px;
+      max-width: 450px;
+      margin-left: 200px;
+    }
+    .p2 {
+      margin-left: 200px;
+      max-width: 440px;
+      font-size: 17px;
+    }
+  }
+
+  @media only screen and (max-width: 1145px) {
+    .section1 {
+      height: auto;
+      div {
+        max-width: 450px;
+      }
+      img {
+        margin: -70px 0px 200px 0px;
+      }
+    }
+    .section2 {
+      height: auto;
+      flex-direction: row-reverse;
+      .div1 {
+        max-width: 400px;
+        height: auto;
+        background-color: transparent;
+        background-image: none;
+        border-right: none;
+        margin-left: 0px;
+        margin: 50px 50px 0px 0px;
+        .watch {
+          margin: 0;
+        }
+      }
+      .parent {
+        align-items: center;
+        max-width: 450px;
+        h1 {
+          max-width: 450px;
+        }
+        .child {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 20px;
+          img {
+            width: 80px;
+            margin-top: -30px;
+          }
+          .p1 {
+            letter-spacing: 3px;
+          }
+        }
+        h1 {
+          width: 500px;
+          font-size: 50px;
+        }
+        .p2 {
+          font-size: 17px;
+          width: 470px;
+        }
+      }
+    }
+    .section3 {
+      div {
+        display: flex;
+        margin-left: 50px;
+        img {
+          max-width: 70px;
+        }
+        .p1 {
+          letter-spacing: 3px;
+          margin: 18px 0px 0px 21px;
+        }
+      }
+      h1 {
+        font-size: 50px;
+        max-width: 450px;
+        margin-left: 50px;
+      }
+      .p2 {
+        margin-left: 50px;
+        max-width: 440px;
+        font-size: 17px;
+      }
+    }
+    .subscribe {
+      .input1 {
+        max-width: 800px;
+      }
+    }
+    footer {
+      height: 500px;
+      .footer-bottom {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+      }
+    }
+    nav {
+      justify-content: center;
+    }
+  }
+
+  @media only screen and (max-width: 750px) {
+    nav {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .container-fluid {
+        margin-left: 50px;
+        .trackmate {
+          margin: 0;
+          display: flex;
+        }
+        .navigation {
+          margin: 0;
+        }
+      }
+    }
+    .subscribe {
+      h1 {
+        max-width: 450px;
+      }
+      img {
+        max-width: 450px;
+      }
+      h3 {
+        font-size: 18px;
+        margin-top: 70px;
+        display: flex;
+        align-self: first baseline;
+        margin-left: 50px;
+      }
+    }
+  }
+}
